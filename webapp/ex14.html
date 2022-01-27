@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>자바스크립트 예제</h1>
+	</body>
+	
+	<script type="text/javascript">
+		//객체생성 (빈객체도 생성가능함)
+		var guestbookVo = {
+			//필드 개념
+			no:1, 
+			name:"장서윤", 
+			password:1234, 
+			content:"안녕하세요",
+			//메소드 개념
+			showInfo:function(){
+				return 3+4;
+			}
+		};
+		
+		console.log(guestbookVo);
+		console.log(guestbookVo.no); //한개의 값 꺼내오기
+		console.log(guestbookVo.name); //한개의 값 꺼내오기
+		//메소드 기능 실행
+		console.log(guestbookVo.showInfo()); 
+		//정의된것이 없으면 필드가 생성됨
+		guestbookVo.regDate = "2020-01-27";
+		
+		//------------------------------------
+		var personVo = {};
+		
+		personVo.no = 1;
+		personVo.name = "장서윤";
+		personVo.hp = "010-2222-2222";
+		personVo.company = "02-2222-2222";
+		
+		console.log(personVo);
+		
+		//출력 표현 방법 
+		console.log(personVo.name);
+		console.log(personVo["name"]);
+		
+	</script>
+</html>

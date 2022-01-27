@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+		<title>방명록에서 쓰임~</title>
+	</head>
+	
+	<body>
+		
+		<ul>
+			<li id="first" class="red">첫번째 아이템입니다.</li>
+			<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+			<li id="third" class="del">세번째아이템입니다.</li>
+			<li><strong>네번째 아이템입니다.</strong></li>
+		</ul>
+		
+		<button id="btn" type="button">li태그 추가버튼</button>
+	</body>
+	
+	<script type="text/javascript">
+		
+		//부모한테 이벤트를 줄경우 설정된 박스만큼 아무곳이나 눌러도 눌림
+		//ul이 가지고 있다가 li에 적용하라고 만들어놓음/ 이벤트 받는것은 ul ->실제 일은 li
+		$("ul").on("click","li",function(){
+			var text = $(this);
+			console.log(text.text());
+			
+			$(this).text("장서윤");
+		});
+		
+		//나중에 태어난애들은 온클릭을 모른다.
+		$("#btn").on("click",function(){
+			console.log("클릭");
+			$("ul").append("<li id='5'>다섯번째 아이템입니다.</li>");
+			$("ul").append("<li id='6'>여섯번째 아이템입니다.</li>");
+			$("ul").append("<li id='7'>입곱번째 아이템입니다.</li>");
+		}); 
+		
+		/* $("li").on("click", function(){
+			var tag = $(this);
+			console.log(tag.text());
+
+		}); */
+
+	</script>
+
+
+</html>

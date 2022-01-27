@@ -55,5 +55,25 @@
 		for(var i = 0; i<array2.length; i++){
 			console.log(array2[i]);			
 		}
+		
+		console.log("=========배열3=========");
+		
+		var array = [273,"hello",true, sum(5,2),[111,222], function(){return 3+4;}];
+		
+		//console.log(array); //[273, 'hello', true, 7] toString처럼 전체를 쭉 찍어줌
+		console.log(array[0]);
+		console.log(array[1]);
+		console.log(array[2]);
+		console.log(array[3]);
+		console.log(array[4][0]);
+		console.log(array[4][1]);
+		console.log(array[5]); //5번방 함수 부름 function나옴
+		console.log(array[5]()); //5번방 함수 실행 7
+		
+		//1번째 바퀴 함수 정의시 
+		function sum(a,b){
+			return a+b;
+		}
+		
 	</script>
 </html>

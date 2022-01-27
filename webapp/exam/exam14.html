@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+	<title>Insert title here</title>
+	</head>
+	<body>
+		
+		<ul>
+			<li id="first" class="red">첫번째 아이템입니다.</li>
+			<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+			<li id="third" class="del">세번째아이템입니다.</li>
+			<li><strong>네번째 아이템입니다.</strong></li>	
+		</ul>
+	
+	</body>
+	
+	<script type="text/javascript">
+		//first를 클릭하면 console창에 text 찍힘
+		/* $("#first").on("click",function(){
+				var str = $("#first").text();
+				console.log(str);
+		}); */
+		
+		//li를 클릭했을 때 text값 출력
+		/* $("li").on("click",function(){
+				console.log("li클릭");
+		}); */
+		
+		//li클릭시 각각의 li 구별하여 출력
+		/* $("li").on("click",function(){
+			var tag = $(this)
+			//속성값 꺼내기
+			var tagId = tag.attr("id");
+			console.log(tagId);
+		}); */
+		
+		//두번째 아이템을 클릭하면 텍스트 변경됨
+		$("li").on("click",function(){
+			var change = $(this).text("장서윤");
+			console.log(change);
+		});
+
+		
+	</script>
+
+
+</html>
