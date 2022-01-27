@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>자바스크립트 예제</h1>
+		
+		<script type="text/javascript">
+		
+			var plusSum = plus(5,3);
+			var plusSum2 = plus(5,3.5);
+			var plusSum3 = plus(5,'안녕하세요');
+			
+			console.log(plusSum); //8
+			console.log(plusSum2); //8.5
+			console.log(plusSum3); //5안녕하세요
+
+			//1번 사이클 함수 정리
+			function plus(no1,no2){
+				var sum = no1+no2;
+				
+				return sum;
+			}
+
+		</script>
+	</body>
+
+</html>

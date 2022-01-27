@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>자바스크립트 예제</h1>
+	</body>
+	
+	<script type="text/javascript">
+		/* var name = "global"; // 변수 선언
+		
+		checkScope(); // 실행 local
+		console.log(name); // local은 괄호가 끝나면 사라짐 따라서 global찍힘
+		
+		//1번째 사이클 함수 조사
+		function checkScope(){
+			var name = "local";
+			console.log(name); // 괄호가 끝나면 사라짐
+		} */
+		
+		//-------------------------------------
+		var name = "global";
+		
+		checkScope();
+		console.log(name); //local
+		
+		console.log(name2);
+		
+		//1번째 사이클 함수 조사
+		function checkScope(){
+			name = "local"; //local을 name에 대입해라 (새로 생성한 것 아님)
+			name2 = "로컬"; //밖에서 선언한 것과 같이 만들어줌 var name2 = "로컬"
+		}
+	</script>
+
+</html>

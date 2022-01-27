@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>자바스크립트 예제</h1>
+		
+		<script type="text/javascript">
+			var test = function(){//1
+				console.log("testA함수입니다.")
+			}
+			
+			function test(){//2
+				console.log("testB함수입니다")
+			}
+			
+			test(); // 1번 실행
+			
+			//1번 사이클 : 정의된 기명함수 찾음
+			//2번 사이클 : 순차적으로 코드 실행 --> 1번실행 
+			
+			console.log(typeof test); //function
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>자바스크립트 예제</h1>
+	</body>
+	
+	<script type="text/javascript">
+		//기명함수(선언적함수): 이름이 있는 함수--> 정의 부분이 먼저 해석된다.
+		//정의
+		function testA(){//단순 정의, 사용된것이 아니다.
+			console.log("testA()함수실행");
+			
+		}
+	
+		//testA이름, ()실행
+		//실행 --> 정의부분이 아래에 있어도 실행된다.
+		testA(); //함수 실행 -> 사용
+	
+		//-------------------------------------------
+		
+		//익명함수: 이름이 없는 함수 --> 실제로 이름이 없으면 다시 사용할 수 없다--> 변수에 할당
+		//★익명함수는 미리 조사되지 않음 ! 순서대로 코드 해석
+		var testB = function() {
+			console.log("익명함수 실행");
+		}
+		
+		//testB 변수이름, ()실행
+		//실행
+		testB();
+		
+	</script>
+
+</html>
